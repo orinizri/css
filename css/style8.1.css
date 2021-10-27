@@ -1,0 +1,96 @@
+* {
+    background-color: #334660;
+    color: white;
+    font-family:Arial, Helvetica, sans-serif
+
+}
+
+
+/* General box preferences */
+.box {
+
+    font-size: 20px;
+    padding: 10px 20px;
+    margin: 10px;
+    height: 10vh;
+    background-color: #02DC77;
+    text-align: center;
+}
+
+h2 {
+    padding-left: 200px;
+}
+
+/* Sizes for the different boxes per column */
+.box.box1 {
+    height: 7vh;
+    padding: 7px 50px 7px 50px;
+}
+.box.box2 {
+    font-size: 18px;
+    height: 5vh;
+    padding: 5px 30px;
+}
+.box.box3 {
+    font-size: 14px;
+    height: 40%;
+    padding: 5px 30px;
+}
+/* Design per line */
+.container.line1 button {
+    border: none;
+}
+.container.line2 button {
+    border: none;
+    border-radius: 50px;
+}
+.container.line3 button {
+    background-color: transparent;
+    border: 1px solid;
+}
+.container.line4 button {
+    background-color: transparent;
+    border-radius: 50px;
+    border: 1px solid;
+}
+/* design per button */
+/* line 1 */
+.box.box1.line1 {
+    background-color:#10D57D;
+}
+.box.box2.line1 {
+    background-color:#FF2322;
+}
+.box.box3.line1 {
+    background-color:#0B8DE0;
+}
+/* line 2 */
+.box.box1.line2 {
+    background-color:#F57804;
+}
+.box.box2.line2 {
+    background-color:#F5CE00;
+}
+.box.box3.line2 {
+    background-color:#7A8C89;
+}
+/* line 3 */
+.box.box1.line3 {
+    border:2px solid #10D57D;
+}
+.box.box2.line3 {
+    border:2px solid #FF2322;
+}
+.box.box3.line3 {
+    border:2px solid #0B8DE0;
+}
+/* line 4 */
+.box.box1.line4 {
+    border:2px solid #F57804;
+}
+.box.box2.line4 {
+    border:2px solid #F5CE00;
+}
+.box.box3.line4 {
+    border:2px solid #7A8C89;
+}
