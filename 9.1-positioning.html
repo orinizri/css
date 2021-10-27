@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style9.1.css">
+</head>
+<body>
+    <div id="outer">
+    <div id="inner"></div>
+    </div>
+</body>
+
+</html>
+
+<!-- The problem is that #outer was by default position: static; so inner came right
+below it since it is a block element. I had to position the outer as relative,
+as it is the parent element, so the inner box will be positioned on the parent element
+and then I can position it in tblr relatively to the parent.  -->
