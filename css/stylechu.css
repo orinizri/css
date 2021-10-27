@@ -1,5 +1,25 @@
-.container {
+* {
+    margin: 0;
+    padding:0;
+}
+
+.card {
+    margin: 30px;
     box-shadow: 0 40px 80px 0 rgba(0,0,0,0.3);
-    width: 16%;
+    width: 20vw;
+    height: 50vh;
     padding: 2px 3px;
+    background-color: yellow;
+}
+.title {
+    background-color: darkgoldenrod;
+    padding: 5px;
+}
+.sub-title {
+    background-color: darkgray;
+    padding: 5px;
+}
+.link-container {
+    background-color: dimgray;
+    padding: 5px;
 }
