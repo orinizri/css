@@ -1,10 +1,13 @@
 * {
     background-color: #334660;
     color: white;
-    font-family:Arial, Helvetica, sans-serif
+    font-family:Arial, Helvetica, sans-serif;
 
 }
-
+.container {
+    margin: auto;
+    text-align: center;
+}
 
 /* General box preferences */
 .box {
@@ -18,7 +21,7 @@
 }
 
 h2 {
-    padding-left: 200px;
+    text-align: center;
 }
 
 /* Sizes for the different boxes per column */
@@ -54,11 +57,10 @@ h2 {
     border: 1px solid;
 }
 /* design per button */
-/* line 1 */
+/* line 1 + ho*/
 .box.box1.line1 {
     background-color:#10D57D;
 }
-/* hover */
 .box.box1.line1:hover {
     background-color: #03B45D;
 }
