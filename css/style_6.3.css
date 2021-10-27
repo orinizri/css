@@ -1,0 +1,9 @@
+.main-header {
+    font-family: "Sofia", sans-serif;
+    background-color: gray;
+}
+.card {
+    color: brown;
+    box-shadow: 0 40px 80px 0 rgba(0,0,0,0.3);
+    width: 15%;
+}
