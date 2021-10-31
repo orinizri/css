@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+    <style>
+        * {
+            box-sizing: border-box;
+            color:#4f4f4f;
+        }
+        .flex-container {
+            width: 100vw;
+            height: 20vh;
+            display: flex;
+            background-color: #c3c3c3;
+            justify-content: space-between;
+            align-items: center;
+            flex:1;
+        }
+        .b {
+            flex: 1;
+        }
+        .b.APPLESEEDS {
+            font-weight: bold;
+        }
+        .invi {
+            flex:2;
+        }
+
+@media (max-width:800px) {
+    .flex-container {
+        width:100vw;
+        height:100vh;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .invi {
+        display: none;
+    }
+    .nav {
+}
+
+    </style>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Appleseed Nav-bar</title>
+</head>
+<body>
+    <div class="flex-container">
+        <div class="b APPLESEEDS">APPLESEEDS</div>
+        <div class="invi"></div>
+        <div class="invi 2"></div>
+        <div class="b 2">HOME</div>
+        <div class="b 3">ABOUT</div>
+        <div class="b 4">PORTFOLIO</div>
+        <div class="b 5">CONTACT</div>
+    </div>
+</body>
+</html>
