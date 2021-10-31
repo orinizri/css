@@ -1,0 +1,15 @@
+.container-box {
+    box-sizing: border-box; 
+    width: 100wh;
+}
+.box {
+    text-align: center;
+    width:100px;
+    display: inline-block;
+}
+@media screen and (max-width:800px) {
+    .box {
+        display: block;
+    }
+    
+}
