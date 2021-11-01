@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<style>
+    .text {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    span {
+        font-weight: bold;
+        position: relative;
+    }
+
+
+
+    span:hover:after {
+        display: flex;
+        content:'Tip';
+        position:absolute;
+        width:10vw;
+        height: 5vh;
+        right:1rem;
+        bottom:1rem;
+        border-radius: 30px;
+        background-color:red;
+        justify-content: center;
+        align-items: center;
+    }
+
+</style>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Lorem.</h1>
+    <div class="text">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt eaque odio ea fugiat quasi, odit molestiae nesciunt aliquam ex iusto laborum, hic recusandae ut velit nihil adipisci rem iure. Officiis architecto temporibus, iusto beatae veniam quam aspernatur culpa itaque eum? Lorem ipsum dolor sit amet consectetur, adipisicing elit. <span>Recusandae</span>, voluptas? Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam incidunt blanditiis delectus tenetur aliquid nemo quidem, qui, rem id maiores corrupti deserunt non quisquam? Quos cupiditate ratione dolorum tempore! Ipsum.</p>
+    </div>
+</body>
+</html>
