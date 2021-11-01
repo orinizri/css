@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+    <style>
+        * {
+            padding: 0;
+            margin:0;
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            position: relative;
+            width: 100vw;
+            height: 100vh;
+            background-color: black;
+            justify-content: center;
+            align-items: center;
+            flex:1;
+        }
+        .top, .bottom {
+            position: relative;
+            width: 8vw;
+            height: 2vh;
+            color: white;
+            z-index:1;
+        }
+        .top:before {
+            content:'';
+            position: absolute;
+            border-top: 1px solid red;
+            border-left: 1px solid red;
+            width:1vw;
+            height: 2vh;
+        }
+        .top:after {
+            content:'';
+            position: absolute;
+            border-top: 1px solid red;
+            border-right: 1px solid red;
+            left:7vw;
+            width:1vw;
+            height: 2vh;
+        }
+        .bottom:before {
+            content:'';
+            position: absolute;
+            border-bottom: 1px solid red;
+            border-left: 1px solid red;
+            width:1vw;
+            height: 2vh;
+        }
+        .bottom:after {
+            content:'';
+            position: absolute;
+            border-bottom: 1px solid red;
+            border-right: 1px solid red;
+            width:1vw;
+            height: 2vh;
+            left:7vw;
+        }
+
+
+        .box {
+            display: flex;
+            position: relative;
+            width: 20%;
+            height: 5%;
+            color: white;
+            justify-content: center;
+            
+        }
+        .box > p {
+            align-self: center;
+            background-color: fuchsia;
+        }
+    </style>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cool</title>
+</head>
+<body>
+    <div class="container">
+        <div class="top"></div>
+            <div class="box">
+                <p>cool border</p>
+            </div>
+            <div class="bottom"></div>
+    </div>
+</body>
+</html>
