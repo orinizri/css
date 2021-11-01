@@ -13,18 +13,28 @@
 
 
     span:hover:after {
-        display: flex;
-        content:'Tip';
+        content: attr(data-gggg);
         position:absolute;
-        width:10vw;
+        width:7vw;
         height: 5vh;
-        right:1rem;
-        bottom:1rem;
+        bottom: 100%;  /* At the top of the tooltip */
+        left: 50%;
+        margin-left: -5px;
         border-radius: 30px;
-        background-color:red;
-        justify-content: center;
-        align-items: center;
+        background-color:gold;
+        left:2rem;
+
     }
+    span:hover:before {
+    content: " ";
+    position: absolute;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: gold transparent transparent transparent;
+    left:3rem;
+}
+    
 
 </style>
 <html lang="en">
@@ -37,7 +47,7 @@
 <body>
     <h1>Lorem.</h1>
     <div class="text">
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt eaque odio ea fugiat quasi, odit molestiae nesciunt aliquam ex iusto laborum, hic recusandae ut velit nihil adipisci rem iure. Officiis architecto temporibus, iusto beatae veniam quam aspernatur culpa itaque eum? Lorem ipsum dolor sit amet consectetur, adipisicing elit. <span>Recusandae</span>, voluptas? Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam incidunt blanditiis delectus tenetur aliquid nemo quidem, qui, rem id maiores corrupti deserunt non quisquam? Quos cupiditate ratione dolorum tempore! Ipsum.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt eaque odio ea fugiat quasi, odit molestiae nesciunt aliquam ex iusto laborum, hic recusandae ut velit nihil adipisci rem iure. Officiis architecto temporibus, iusto beatae veniam quam aspernatur culpa itaque eum? Lorem ipsum dolor sit amet consectetur, adipisicing elit. <span data-gggg="Wow">Recuandae</span>, voluptas? Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam incidunt blanditiis delectus tenetur aliquid nemo quidem, qui, rem id maiores corrupti deserunt non quisquam? Quos cupiditate ratione dolorum tempore! Ipsum.</p>
     </div>
 </body>
 </html>
