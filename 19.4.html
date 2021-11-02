@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+    <style>
+        * {
+            font-size: 1rem;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        .container {
+            padding:0;
+            margin:0;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+        .box {
+            /* margin:50px 50px; */
+            /* padding: 50px 50px; */
+            position:relative;
+            margin-top:50px;
+            align-self: center;
+        }
+
+        .box::before {
+            content:'';
+            position:absolute;
+            height: 0px;
+            width:100px;
+            top: -10px;
+            left:-25px;
+            border-bottom: 2px solid black;
+            transition: all 0.3s ease-in;
+
+        }
+        .box::after {
+            content:'';
+            position:absolute;
+            height: 0px;
+            width:100px;
+            border-bottom: 2px solid black;
+            top:30px;
+            left:-25px;
+            transition: all 0.3s ease-in;
+        }
+        .box:hover::after {
+            width:0;
+        }
+        .box:hover::before {
+            width:0;
+            left:50px;
+        }
+    </style>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="box box-1">Home</div>
+        <div class="box box-2">About</div>
+        <div class="box box-3">Services</div>
+        <div class="box box-4">Porfolio</div>
+        <div class="box box-5">Contact</div>
+    </div>
+</body>
+</html>
