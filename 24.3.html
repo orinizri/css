@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+    <style>
+        * {
+            border-radius: 10px;
+        }
+        .grid {
+            max-width: 1200px;
+            display: grid;
+            grid-gap: 1rem;
+            justify-content: center;
+        }
+        .item {
+            padding: 3rem;
+            border: 1px solid gray;
+            font-size: 1.3rem;
+            text-align: center;
+        }
+        .item:first-child {
+            grid-column: 1 / span 4;
+            background-color: red;
+        }
+        .item:nth-child(2) {
+            background-color: blue;
+            grid-column: 1 / span 1;
+        }
+        .item:nth-child(3) {
+            background-color: green;
+            grid-column: 2 / span 2;
+        }
+        .item:nth-child(4) {
+            background-color: purple;
+        }
+        .item:nth-child(5) {
+            background-color: yellow;
+            grid-column: 1 / span 4;
+        }
+        @media (max-width : 768px) {
+            .grid {
+            grid-template-areas: 
+            'header header header header'
+            'sidebar content content content'
+            'sidebar2 sidebar2 sidebar2 sidebar2'
+            'footer footer footer footer';
+            }
+            .item:first-child {
+                grid-area: header;
+            }
+            .item:nth-child(2) {
+                grid-area: sidebar;
+            }
+            .item:nth-child(3) {
+                grid-area: content;
+            }
+            .item:nth-child(4) {
+                grid-area: sidebar2;
+            }
+            .item:nth-child(5) {
+                grid-area: footer;
+            }
+        }
+        @media (max-width:500px) {
+            .grid {
+                grid-template-areas: 
+                    'header'
+                    'sidebar'
+                    'content'
+                    'sidebar2'
+                    'footer';
+            }
+            .item:first-child {
+                grid-area: header;
+            }
+            .item:nth-child(2) {
+                grid-area: sidebar;
+            }
+            .item:nth-child(3) {
+                grid-area: content;
+            }
+            .item:nth-child(4) {
+                grid-area: sidebar2;
+            }
+            .item:nth-child(5) {
+                grid-area: footer;
+            }            
+        }
+    </style>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="grid">
+        <div class="item i1">Item0</div>
+        <div class="item i2">Item1</div>
+        <div class="item i3">Item2</div>
+        <div class="item i4">Item3</div>
+        <div class="item i5">Item4</div>
+        </div>
+</body>
+</html>
