@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+    <style>
+        * {
+            border-radius: 10px;
+        }
+        .grid {
+            display: grid;
+            grid-gap: 1rem;
+            justify-content: center;
+        }
+        .row1 {
+            display:grid;
+            grid-template-columns: 1fr 1fr;
+            grid-gap: 1rem;
+        }
+        .row2 {
+            display: grid;
+            grid-template-columns: 1fr 4fr;
+            grid-gap: 1rem;
+        }
+        .item {
+            padding: 3rem;
+            border: 1px solid gray;
+            font-zise: 1.3rem;
+            text-align: center;
+        }
+        .grid > div {
+            display: grid;
+            grid-template-columns: 1f;
+        }
+        .item.item.i1 {
+            background-color: red;
+        }
+        .item.item.i2 {
+            background-color: blue;
+        }
+        .item.item.i3 {
+            background-color: green;
+        }
+        .item.item.i4 {
+            background-color: purple;
+        }
+        .item.item.i5 {
+            background-color: yellow;
+        }
+
+    </style>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="grid">
+        <div class="row1">
+            <div class="item i1">Item</div>
+            <div class="item i2">Item</div>
+        </div>
+        <div class="row2">
+        <div class="item i3">Item</div>
+        <div class="item i4">Item</div>
+        </div>
+        <div class="item i5">Item</div>
+    </div>
+</body>
+</html>
